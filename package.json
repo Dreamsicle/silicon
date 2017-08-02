@@ -1,7 +1,7 @@
 {
   "name": "silicon",
   "productName": "silicon",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "lint": "eslint src"
   },
   "keywords": [],
-  "author": "pixl",
-  "license": "MIT",
+  "author": "danPixl",
+  "license": "GPL-3.0",
   "config": {
     "forge": {
       "make_targets": {
