@@ -152,12 +152,15 @@ body {
 
 
 .addressBarContainer {
-    width: calc(100% - 16px * 2);
+    width: calc(100% - 6em);
     height: fit-content;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 3em;
 }
 
 #addressBar {
-    width: calc(100% - 1.666666667% * 2);
+    width: calc(100% - 32px);
     height: 3em;
     font-size:16px; 
     padding:16px; 
@@ -167,13 +170,12 @@ body {
     color:#EBE8E1; 
     box-shadow: inset 0px 0px 12px -2px rgba(34,34,34,1);
     transition-duration: .125s;
-    margin: 1.666666667%;
     margin-bottom: 0.25em;
     font-family: 'Rubik'
 }
 
 #go {
-    width: 1486px;
+    width: 100%;
     height: 3em;
     font-size:16px; 
     padding:16px; 
@@ -183,7 +185,6 @@ body {
     color:#EBE8E1; 
     box-shadow: 0px 0px 12px -2px rgba(34,34,34,1);
     transition-duration: .25s;
-    margin: 1.666666667%;
     font-family: 'Rubik'
 }
 
