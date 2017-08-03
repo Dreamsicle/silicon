@@ -1,8 +1,5 @@
 var webContent = document.getElementById("webContent")
 
-/* init webContent, this should be replaced an actual new tab page */
-webContent.setAttribute("src", "https://reddit.com")
-
 function navigatorControl(typeOfRequest) {
     switch (typeOfRequest) {
 
@@ -21,3 +18,15 @@ function navigatorControl(typeOfRequest) {
     
     return
 }
+
+function goToUrl(url) {
+    webContent.setAttribute("src", url)
+    return
+}
+
+function openWebContentDevTools() {
+    webContent.openDevTools()
+}
+
+/* init webContent, this should be replaced an actual new tab page */
+webContent.setAttribute("src", "https://reddit.com")

@@ -96,4 +96,5 @@ html, body {
     height: 100vh;
     width: calc(100% - 4em);
     z-index: 1;
+    font-family: 'Rubik'
 }
