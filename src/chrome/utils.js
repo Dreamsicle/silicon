@@ -2,3 +2,4 @@
 const {BrowserWindow} = require('electron').remote
 var currentWindow = BrowserWindow.getFocusedWindow()
 
+var webContent = document.getElementById("webContent")
