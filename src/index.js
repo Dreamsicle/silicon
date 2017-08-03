@@ -7,15 +7,15 @@ let mainWindow;
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 800,
+    backgroundColor: '#EBE8E1',
+    frame: false,
+    title: 'Project Silicon'
   });
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`);
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  mainWindow.loadURL(`file://${__dirname}/chrome/index.html`);
 
   // Emitted when the window is closed.
   mainWindow.on('closed', () => {
