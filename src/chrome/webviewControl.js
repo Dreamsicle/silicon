@@ -1,0 +1,1 @@
+document.getElementById("webContent").setAttribute("src", "https://reddit.com");

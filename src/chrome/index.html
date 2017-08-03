@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="utils.js"></script>
+    <script src="webviewControl.js" defer></script>
   </head>
   <body>
     <div class="addressBar">
+        <div class="webContentControlContainer">
+            <button onclick="currentWindow.minimize()">⬅</button>
+            <button onclick="currentWindow.close()">➡</button>
+        </div>
+
         <div class="windowControlContainer">
             <button onclick="currentWindow.minimize()">➖</button>
             <button onclick="currentWindow.close()">✖</button>
         </div>
     </div>
     <div class="sideBar"></div>
+    <webview id="webContent"></webview>
   </body>
 </html>

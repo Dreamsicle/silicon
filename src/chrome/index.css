@@ -19,9 +19,10 @@ html, body {
     left: 4em;
     height: 2em;
     width: calc(100% - 4em);
-    background-color: rgba(31,43,50,.75);
+    background-color: rgba(31,43,50,.90);
     color: #EBE8E1;
     -webkit-app-region: drag;
+    z-index: 2;
 }
 
 .windowControlContainer {
@@ -50,6 +51,33 @@ html, body {
     background-color: #738B94;
 }
 
+.webContentControlContainer {
+    -webkit-app-region: no-drag;
+    display: flex;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.webContentControlContainer button {
+    height: 100%;
+    border: none;
+    color: #EBE8E1;
+    background-color: transparent;
+    transition-duration: .09s;
+    margin-left: .250em;
+}
+
+.webContentControlContainer button:hover {
+    background-color: rgb(31,43,50);
+}
+
+.webContentControlContainer button:active {
+    background-color: #738B94;
+}
+
+
 .sideBar {
     position: absolute;
     display: block;
@@ -59,4 +87,13 @@ html, body {
     height: 100%;
     background-color: #1F2B32;
     color: #EBE8E1
+}
+
+#webContent {
+    position: relative;
+    top: 0;
+    left: 4em;
+    height: 100vh;
+    width: calc(100% - 4em);
+    z-index: 1;
 }
