@@ -23,7 +23,6 @@ function goToUrl(url) {
     if (url.substr(4) !== 'http') {
         url = "http://" + url
     }
-    webContent.setAttribute("style", "height: 100vh; width: calc(100% - 4em);")
     webContent.setAttribute("src", url)
     return
 }
@@ -31,3 +30,10 @@ function goToUrl(url) {
 function openWebContentDevTools() {
     webContent.openDevTools()
 }
+
+// init webcontent
+webContent.setAttribute("src", '../newTab/index.html')
+
+webContent.addEventListener('load-commit', (url) => {
+    // do some stuff here eventually
+})
