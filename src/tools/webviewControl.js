@@ -20,9 +20,10 @@ function navigatorControl(typeOfRequest) {
 }
 
 function goToUrl(url) {
-    if (url.substr(8) !== 'https://' || url.substr(7) !== 'http://') {
+    if (url.substr(4) !== 'http') {
         url = "http://" + url
     }
+    webContent.setAttribute("style", "height: 100vh; width: calc(100% - 4em);")
     webContent.setAttribute("src", url)
     return
 }
@@ -30,7 +31,3 @@ function goToUrl(url) {
 function openWebContentDevTools() {
     webContent.openDevTools()
 }
-
-/* init webContent, this should be replaced an actual new tab page */
-webContent.setAttribute("src", "../newTab/index.html")
-
