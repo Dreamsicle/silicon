@@ -20,6 +20,9 @@ function navigatorControl(typeOfRequest) {
 }
 
 function goToUrl(url) {
+    if (url.substr(8) !== 'https://' || url.substr(7) !== 'http://') {
+        url = "http://" + url
+    }
     webContent.setAttribute("src", url)
     return
 }
@@ -29,4 +32,5 @@ function openWebContentDevTools() {
 }
 
 /* init webContent, this should be replaced an actual new tab page */
-webContent.setAttribute("src", "https://reddit.com")
+webContent.setAttribute("src", "../newTab/index.html")
+

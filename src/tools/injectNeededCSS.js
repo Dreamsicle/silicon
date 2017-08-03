@@ -7,8 +7,7 @@ function cssEngine(rule) {
 }
 
 // CSS rules
-var rule  = 'html, body { font-family: "Rubik"; }';
-    rule += ' html { margin-top: 2em }';
+var rule  = '* { font-family: "Rubik"; }';
 
 // Load the rules and execute after the DOM loads
 window.onload = function() {cssEngine(rule)};
