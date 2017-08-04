@@ -54,3 +54,16 @@ webContent.addEventListener('leave-html-full-screen', (url) => {
     webContent.style.left = "4em"
     webContent.style.width = "calc(100% - 4em)"
 })
+
+webContent.addEventListener('did-change-theme-color', (bgColor) => {
+    var bgColor = bgColor.themeColor
+
+    /* catch if the site doesn't have theme color defined */
+    if (bgColor == '#000000') {
+        document.getElementById("sideBar").setAttribute("style", "background-color: #1F2B32")
+        return
+    }
+
+    document.getElementById("sideBar").setAttribute("style", "background-color: " + bgColor + " !important")
+    console.log(bgColor)
+})
