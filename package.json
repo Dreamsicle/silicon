@@ -1,6 +1,6 @@
 {
   "name": "silicon",
-  "productName": "silicon",
+  "productName": "Project Silicon",
   "version": "0.0.1",
   "description": "My Electron application description",
   "main": "src/index.js",

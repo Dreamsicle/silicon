@@ -1,4 +1,5 @@
-import { app, BrowserWindow, globalShortcut } from 'electron';
+import { app, BrowserWindow, globalShortcut } from 'electron'
+var path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -9,9 +10,10 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 1000,
     height: 800,
-    backgroundColor: '#EBE8E1',
+    backgroundColor: '#1F2B32',
     frame: false,
-    title: 'Project Silicon'
+    title: 'Project Silicon',
+    icon: path.join(__dirname, 'src/assets/icon.png')
   });
 
   // and load the index.html of the app.
