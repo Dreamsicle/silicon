@@ -3,17 +3,23 @@
 ## Running
 *Make sure you have Node, NPM, and Git installed!*
 
-1. Pull the Git repo
+### Initial Setup
+
+1. Clone the Git repo: `git clone https://github.com/Dreamsicle/silicon.git'
 
 2. Enter the directory
 
 3. Run `npm install --only=dev`
 
-4. Run `npm start`
+---
+1. Pull the Git repo to ensure you have the latest changes: `git pull`
+
+2. Run `npm start`
 
 ### Compiling
 
-1. Follow the above steps
+1. Follow the inital setup
+
 2. Run `electron-forge package`
 
 This drops an executable in `out/YourPlatformHere/`.
