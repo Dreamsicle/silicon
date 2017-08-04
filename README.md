@@ -5,7 +5,7 @@
 
 ### Initial Setup
 
-1. Clone the Git repo: `git clone https://github.com/Dreamsicle/silicon.git'
+1. Clone the Git repo: `git clone https://github.com/Dreamsicle/silicon.git`
 
 2. Enter the directory
 
