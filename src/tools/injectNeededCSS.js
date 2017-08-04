@@ -7,7 +7,7 @@ function cssEngine(rule) {
 }
 
 // CSS rules
-var rule  = "@import url('https://fonts.googleapis.com/css?family=Rubik:400,700'); html { font-family: 'Rubik'; } body { font-family: 'Rubik'; }"
+var rule  = "@import url('https://fonts.googleapis.com/css?family=Rubik:400,700'); html { font-family: 'Rubik'; }"
     
 
 // Load the rules and execute after the DOM loads
