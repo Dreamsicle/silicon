@@ -52,5 +52,5 @@ webContent.addEventListener('enter-html-full-screen', (url) => {
 webContent.addEventListener('leave-html-full-screen', (url) => {
     document.getElementById("sideBar").style.display = "block" 
     webContent.style.left = "4em"
-    webContent.style.width = "width: calc(100% - 4em)"
+    webContent.style.width = "calc(100% - 4em)"
 })
