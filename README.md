@@ -12,6 +12,7 @@
 3. Run `npm install --only=dev`
 
 ---
+
 1. Pull the Git repo to ensure you have the latest changes: `git pull`
 
 2. Run `npm start`
